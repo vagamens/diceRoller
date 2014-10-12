@@ -1,31 +1,31 @@
 import random
 
-class dice:
+class Dice:
 
-	def __sanityCheck(self, int=null, string=null, bool=null):
-		__temp
-		if int != null:
+	def __sanityCheck(self, integer=None, string=None, bool=None):
+		__temp = None
+		if integer != None:
 			try:
-				__temp = int(int)
-			except exception e:
-				print( int + "is not an integer.")
+				__temp = int(integer)
+			except:
+				print( integer + " is not an integer.")
 			else:
 				return __temp
-		elif string != null:
+		elif string != None:
 			return string
-		elif bool != null:
+		elif bool != None:
 			try:
 				__temp = bool(bool)
-			except exception e:
-				print( bool + "is not an integer.")
+			except:
+				print( bool + " is not an integer.")
 			else:
 				return __temp
 
 	def __init__(self, sides):
-		self.__sanityCheck(int=sides)
+		self._sides = self.__sanityCheck(integer=sides)
 
 	def setSides(self, sides):
-		self.__sanityCheck(int=sides)
+		self._sides = self.__sanityCheck(integer=sides)
 
 	def roll(self):
 		return random.randint(1, self._sides)
