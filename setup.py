@@ -2,7 +2,7 @@ from setuptools import setup, find_package
 
 setup(
 	name='diceRoller',
-	version='1.0',
+	version='1.1',
 	package_dir={'dice': ''},
 	packages=['dice'],
 	description='A simple dice roller.'
