@@ -28,11 +28,4 @@ class Dice:
 		self._sides = self.__sanityCheck(integer=sides)
 
 	def roll(self):
-		if self._sides == 2:
-			__temp = random.randint(1, self._sides)
-			if __temp == 1:
-				return 1
-			else:
-				return 2
-		else:
-			return random.randint(1, self._sides)
+		return random.randint(1, self._sides)
