@@ -8,7 +8,7 @@ class Dice:
 			try:
 				__temp = int(integer)
 			except:
-				print( integer + " is not an integer.")
+				print integer + " is not an integer."
 			else:
 				return __temp
 		elif string != None:
@@ -17,7 +17,7 @@ class Dice:
 			try:
 				__temp = bool(bool)
 			except:
-				print( bool + " is not an integer.")
+				print bool + " is not an integer."
 			else:
 				return __temp
 
