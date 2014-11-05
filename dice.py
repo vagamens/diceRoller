@@ -31,8 +31,8 @@ class Dice:
 		if self._sides == 2:
 			__temp = random.randint(1, self._sides)
 			if __temp == 1:
-				return 'Heads'
+				return 1
 			else:
-				return 'Tails'
+				return 2
 		else:
 			return random.randint(1, self._sides)
